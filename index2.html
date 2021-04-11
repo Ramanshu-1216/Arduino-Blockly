@@ -1,73 +1,10 @@
-<!DOCTYPE html>
 <html>
-<head>
     <head>
-        <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        
-	<title>
-        Robo Monkee Editor
-    </title>
-        
-        
-<!--   -----------------------------------------------------------------------------------------------------------------------------------------     -->
-    <link rel="icon" type="image/x-icon" href="l.svg">
-<!--   -----------------------------------------------------------------------------------------------------------------------------------------     -->
-    <link rel="stylesheet" href="index.css">
-<!--   -----------------------------------------------------------------------------------------------------------------------------------------     -->
-        
-        
-<!--   -----------------------------------------------------------------------------------------------------------------------------------------     -->
-	<script type="text/javascript" src="C:/Users/gawan/Downloads/google-blockly-4.20201217.0-6-gd7e9eaf (1)/google-blockly-d7e9eaf/blockly_compressed.js"></script>
-  	<script type="text/javascript" src="C:/Users/gawan/Downloads/google-blockly-4.20201217.0-6-gd7e9eaf (1)/google-blockly-d7e9eaf/blocks_compressed.js"></script>
-  	<script type="text/javascript" src="C:/Users/gawan/Downloads/google-blockly-4.20201217.0-6-gd7e9eaf (1)/google-blockly-d7e9eaf/javascript_compressed.js"></script>
-  	<script type="text/javascript" src="C:/Users/gawan/Downloads/google-blockly-4.20201217.0-6-gd7e9eaf (1)/google-blockly-d7e9eaf/msg/js/en.js"></script>
-<!--   -----------------------------------------------------------------------------------------------------------------------------------------     -->
-        
-        
-<!--   -----------------------------------------------------------------------------------------------------------------------------------------     -->
-    <script type="text/javascript" src="code.js"></script>
-    <script type="text/javascript" src="functions.js"></script>
-<!--   -----------------------------------------------------------------------------------------------------------------------------------------     -->
-
-        
-<!--   -----------------------------------------------------------------------------------------------------------------------------------------     -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.1/build/styles/default.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.1/build/highlight.min.js"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-<!--   -----------------------------------------------------------------------------------------------------------------------------------------     -->
-        
-</head>
-<body onload="auto_save_and_restore_blocks()">
-<!--
-    <div style="height: 13%; margin: 10px;">
-     <h1 style="display: inline-block;"><a href="#">Robo Monkee</a></h1> 
-  </div>
--->
-    <div style="width: 100%; height: 11vh;">
-        <a href="#"><img src="logo_name_1.svg" style="width: 100%; display: inline-block; height: 100%;"></a>
-        <input type="file" id="load" style="display: none;"/>
-        <div id="fakeload"></div>
-    </div>
-    <div style="width: 100%; height: 85vh; display: inline-flex">
-	   <div id="blocklyDiv" style="height: 85vh; width: 70%;"></div>
-                <button onclick="showcode()" style="height: 50px; margin: 10px;">Show Code</button>
-        <button onclick="discard()" style="height: 50px; margin: 10px;">Discard Code</button>
-        <button onclick="save()" style="height: 50px; margin: 10px;">Save Code</button>
-        <button onclick="uploadClick()" style="height: 50px; margin: 10px;">Upload Code</button>
-
-        <div id="code" style="height: 85vh; width: 30%;"></div>
-    </div>
-<!--    <?xml version="1.0"?>-->
-<!--
-    <xml xmlns="https://developers.google.com/blockly/xml" id="workspaceBlocks" style="display: none">
-  <block type="arduino" id="c)QK,r!+)QKxAJnzngQ9" x="87" y="87"></block>
-</xml>
--->
-    
-
-<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+        <script type="text/javascript" src="functions.js"></script>
+    </head>
+    <body>
+        <div id="blocklyDiv" style="height: 85vh; width: 70%;"></div>
+        <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
   <category name="Logic" colour="#5b80a5">
     <block type="controls_if"></block>
     <block type="logic_compare">
@@ -475,70 +412,5 @@
     <block type="logic_negate"></block>
   </category>
 </xml>
-    <script>
-        /* TODO: Change toolbox XML ID if necessary. Can export toolbox XML from Workspace Factory. */
-var toolbox = document.getElementById("toolbox");
-
-var options = { 
-	toolbox : toolbox, 
-	collapse : true, 
-	comments : true, 
-	disable : true, 
-	maxBlocks : Infinity, 
-	trashcan : true, 
-	horizontalLayout : false, 
-	toolboxPosition : 'start', 
-	css : true, 
-	media : 'https://blockly-demo.appspot.com/static/media/', 
-	rtl : false, 
-	scrollbars : true, 
-	sounds : true, 
-	oneBasedIndex : true, 
-	grid : {
-		spacing : 20, 
-		length : 3, 
-		colour : '#888', 
-		snap : false
-	}, 
-	zoom : {
-		controls : true, 
-		wheel : true, 
-		startScale : 1, 
-		maxScale : 3, 
-		minScale : 0.3, 
-		scaleSpeed : 1.2
-	}
-};
-
-/* Inject your workspace */ 
-var workspace = Blockly.inject("blocklyDiv", options);
-
-/* Load Workspace Blocks from XML to workspace. Remove all code below if no blocks to load */
-
-/* TODO: Change workspace blocks XML ID if necessary. Can export workspace blocks XML from Workspace Factory. */
-var workspaceBlocks = document.getElementById("workspaceBlocks");
-
-/* Load blocks to workspace. */
-Blockly.Xml.domToWorkspace(workspaceBlocks, workspace);
-    </script>
-<!--
-    <script>
-  function auto_save_and_restore_blocks() {
-  // Restore saved blocks in a separate thread so that subsequent
-  // initialization is not affected from a failed load.
-  window.setTimeout(restore_blocks, 0);
-  // Hook a save function onto unload.
-  bindEvent(window, 'unload', backup_blocks);
-//  tabClick(selected);
-
-  // Init load event.
-  var loadInput = document.getElementById('load');
-  loadInput.addEventListener('change', load, false);
-  document.getElementById('fakeload').onclick = function() {
-    loadInput.click();
-  };
-}
-    </script>
--->
-</body>
+    </body>
 </html>
