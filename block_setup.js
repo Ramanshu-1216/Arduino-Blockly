@@ -191,7 +191,7 @@ Blockly.Blocks['s1'] = {
         .appendField("S1 = ")
         .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
     this.setOutput(true, null);
-    this.setColour(230);
+    this.setColour(300);
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -203,7 +203,7 @@ Blockly.Blocks['s2'] = {
         .appendField("S2 = ")
         .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
     this.setOutput(true, null);
-    this.setColour(230);
+    this.setColour(300);
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -215,7 +215,7 @@ Blockly.Blocks['s3'] = {
         .appendField("S3 = ")
         .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
     this.setOutput(true, null);
-    this.setColour(230);
+    this.setColour(300);
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -227,7 +227,7 @@ Blockly.Blocks['s4'] = {
         .appendField("S4 = ")
         .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
     this.setOutput(true, null);
-    this.setColour(230);
+    this.setColour(300);
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -239,7 +239,7 @@ Blockly.Blocks['s5'] = {
         .appendField("S5 = ")
         .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
     this.setOutput(true, null);
-    this.setColour(230);
+    this.setColour(300);
  this.setTooltip("");
  this.setHelpUrl("");
   }
