@@ -34,13 +34,13 @@ Blockly.JavaScript['move'] = function(block) {
     if(dropdown_move_dropdown == "forward"){
         code = "\tforward"+ value_speed + ";\n";
     }
-    if(dropdown_move_dropdown == "left"){
+    if(dropdown_move_dropdown == "backward"){
         code = "t\backward"+ value_speed + ";\n";
     }
-    if(dropdown_move_dropdown == "left"){
+    if(dropdown_move_dropdown == "deg360"){
         code = "\tdeg360"+ value_speed + ";\n";
     }
-    if(dropdown_move_dropdown == "left"){
+    if(dropdown_move_dropdown == "stop"){
         code = "t\stop"+ value_speed + ";\n";
     }
   return code;
@@ -101,4 +101,90 @@ Blockly.JavaScript['print'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
   var code = '\tSerial.println("' + text_print + '");\n';
   return code;
+};
+
+Blockly.JavaScript['s1'] = function(block) {
+  var dropdown_value_ls4 = block.getFieldValue('Value_LS4');
+  // TODO: Assemble JavaScript into code variable.
+  var code = "digitalRead(S1) =="  + dropdown_value_ls4;
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['s2'] = function(block) {
+  var dropdown_value_ls4 = block.getFieldValue('Value_LS4');
+  // TODO: Assemble JavaScript into code variable.
+  var code = "digitalRead(S2) =="  + dropdown_value_ls4;
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['s3'] = function(block) {
+  var dropdown_value_ls4 = block.getFieldValue('Value_LS4');
+  // TODO: Assemble JavaScript into code variable.
+  var code = "digitalRead(S3) =="  + dropdown_value_ls4;
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['s4'] = function(block) {
+  var dropdown_value_ls4 = block.getFieldValue('Value_LS4');
+  // TODO: Assemble JavaScript into code variable.
+  var code = "digitalRead(S4) =="  + dropdown_value_ls4;
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['s5'] = function(block) {
+  var dropdown_value_ls4 = block.getFieldValue('Value_LS4');
+  // TODO: Assemble JavaScript into code variable.
+  var code = "digitalRead(S5) =="  + dropdown_value_ls4;
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['ir1'] = function(block) {
+  var value_s1 = Blockly.JavaScript.valueToCode(block, 'S1', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_s2 = Blockly.JavaScript.valueToCode(block, 'S2', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_s3 = Blockly.JavaScript.valueToCode(block, 'S3', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_s4 = Blockly.JavaScript.valueToCode(block, 'S4', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_s5 = Blockly.JavaScript.valueToCode(block, 'S5', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = "";
+    if(value_s1 != ""){
+        code += value_s1 + " && ";
+    }
+    if(value_s2 != ""){
+        code += value_s2 + " && ";
+    }
+    if(value_s3 != ""){
+        code += value_s3 + " && ";
+    }
+    if(value_s4 != ""){
+        code += value_s4 + " && ";
+    }
+    if(value_s5 != ""){
+        code += value_s5;
+    }
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['ir2'] = function(block) {
+  var value_s2 = Blockly.JavaScript.valueToCode(block, 'S2', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_s3 = Blockly.JavaScript.valueToCode(block, 'S3', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_s4 = Blockly.JavaScript.valueToCode(block, 'S4', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = "";
+    if(value_s2 != ""){
+        code += value_s2 + " && ";
+    }
+    if(value_s3 != ""){
+        code += value_s3 + " && ";
+    }
+    if(value_s4 != ""){
+        code += value_s4;
+    }
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
 };

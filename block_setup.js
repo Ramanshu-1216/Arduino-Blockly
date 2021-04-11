@@ -150,7 +150,7 @@ Blockly.Blocks['en'] = {
     this.appendValueInput("left_motor_speed")
         .setCheck("Number")
         .setAlign(Blockly.ALIGN_RIGHT)
-        .appendField("and left motor = ");
+        .appendField("left motor = ");
     this.setInputsInline(false);
     this.setOutput(true, null);
     this.setColour(165);
@@ -179,6 +179,102 @@ Blockly.Blocks['print'] = {
         .appendField(new Blockly.FieldTextInput("Print"), "print");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['s1'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("S1 = ")
+        .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['s2'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("S2 = ")
+        .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['s3'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("S3 = ")
+        .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['s4'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("S4 = ")
+        .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['s5'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("S5 = ")
+        .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['ir1'] = {
+  init: function() {
+    this.appendValueInput("S1")
+        .setCheck(null);
+    this.appendValueInput("S2")
+        .setCheck(null);
+    this.appendValueInput("S3")
+        .setCheck(null);
+    this.appendValueInput("S4")
+        .setCheck(null);
+    this.appendValueInput("S5")
+        .setCheck(null);
+    this.setInputsInline(true);
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['ir2'] = {
+  init: function() {
+    this.appendValueInput("S2")
+        .setCheck(null);
+    this.appendValueInput("S3")
+        .setCheck(null);
+    this.appendValueInput("S4")
+        .setCheck(null);
+    this.setInputsInline(true);
+    this.setOutput(true, null);
     this.setColour(230);
  this.setTooltip("");
  this.setHelpUrl("");
