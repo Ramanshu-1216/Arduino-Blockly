@@ -189,20 +189,22 @@ Blockly.JavaScript['ir2'] = function(block) {
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
-Blockly.JavaScript['remote_option'] = function(block) {
-  var dropdown_options_dropdown = block.getFieldValue('options_dropdown');
-  // TODO: Assemble JavaScript into code variable.
-  var code = '...';
-  // TODO: Change ORDER_NONE to the correct strength.
-  return [code, Blockly.JavaScript.ORDER_NONE];
-};
-
 Blockly.JavaScript['remote'] = function(block) {
   var value_button_set_1 = Blockly.JavaScript.valueToCode(block, 'button_set_1', Blockly.JavaScript.ORDER_ATOMIC);
   var value_button_set_2 = Blockly.JavaScript.valueToCode(block, 'button_set_2', Blockly.JavaScript.ORDER_ATOMIC);
   // TODO: Assemble JavaScript into code variable.
   var code = '...;\n';
   return code;
+};
+
+Blockly.JavaScript['_1'] = function(block) {
+  var value_set1 = Blockly.JavaScript.valueToCode(block, 'set1', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_set2 = Blockly.JavaScript.valueToCode(block, 'set2', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_set3 = Blockly.JavaScript.valueToCode(block, 'set3', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
 Blockly.JavaScript['button_vertical_slot'] = function(block) {
@@ -230,43 +232,66 @@ Blockly.JavaScript['button_horizontal_slot_2'] = function(block) {
   var code = '...';
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
-};Blockly.JavaScript['remote_option'] = function(block) {
-  var dropdown_options_dropdown = block.getFieldValue('options_dropdown');
+};
+
+Blockly.JavaScript['remote_option_1'] = function(block) {
+  var dropdown_name = block.getFieldValue('NAME');
   // TODO: Assemble JavaScript into code variable.
   var code = '...';
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
-Blockly.JavaScript['remote'] = function(block) {
-  var value_button_set_1 = Blockly.JavaScript.valueToCode(block, 'button_set_1', Blockly.JavaScript.ORDER_ATOMIC);
-  var value_button_set_2 = Blockly.JavaScript.valueToCode(block, 'button_set_2', Blockly.JavaScript.ORDER_ATOMIC);
-  // TODO: Assemble JavaScript into code variable.
-  var code = '...;\n';
-  return code;
-};
-
-Blockly.JavaScript['button_vertical_slot'] = function(block) {
-  var value_button_set_1 = Blockly.JavaScript.valueToCode(block, 'button_set_1', Blockly.JavaScript.ORDER_ATOMIC);
-  var value_button_set_2 = Blockly.JavaScript.valueToCode(block, 'button_set_2', Blockly.JavaScript.ORDER_ATOMIC);
-  var value_button_set_3 = Blockly.JavaScript.valueToCode(block, 'button_set_3', Blockly.JavaScript.ORDER_ATOMIC);
+Blockly.JavaScript['remote_option_2'] = function(block) {
+  var dropdown_name = block.getFieldValue('NAME');
   // TODO: Assemble JavaScript into code variable.
   var code = '...';
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
-Blockly.JavaScript['button_horizontal_slot_1'] = function(block) {
-  var value_button_set_1 = Blockly.JavaScript.valueToCode(block, 'button_set_1', Blockly.JavaScript.ORDER_ATOMIC);
-  var value_button_set_2 = Blockly.JavaScript.valueToCode(block, 'button_set_2', Blockly.JavaScript.ORDER_ATOMIC);
+Blockly.JavaScript['remote_option_3'] = function(block) {
+  var dropdown_name = block.getFieldValue('NAME');
   // TODO: Assemble JavaScript into code variable.
   var code = '...';
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
-Blockly.JavaScript['button_horizontal_slot_2'] = function(block) {
-  var value_button_set_3 = Blockly.JavaScript.valueToCode(block, 'button_set_3', Blockly.JavaScript.ORDER_ATOMIC);
+Blockly.JavaScript['remote_option_4'] = function(block) {
+  var dropdown_name = block.getFieldValue('NAME');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['remote_option_5'] = function(block) {
+  var dropdown_name = block.getFieldValue('NAME');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['remote_option_6'] = function(block) {
+  var dropdown_name = block.getFieldValue('NAME');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['remote_option_7'] = function(block) {
+  var dropdown_name = block.getFieldValue('NAME');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['remote_option_8'] = function(block) {
+  var dropdown_name = block.getFieldValue('NAME');
   // TODO: Assemble JavaScript into code variable.
   var code = '...';
   // TODO: Change ORDER_NONE to the correct strength.

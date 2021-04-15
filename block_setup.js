@@ -281,28 +281,17 @@ Blockly.Blocks['ir2'] = {
   }
 };
 
-Blockly.Blocks['remote_option'] = {
-  init: function() {
-    this.appendDummyInput()
-        .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/button5.png","width":30,"height":30,"alt":"Forward"},"option1"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/button6.png","width":30,"height":30,"alt":"Right"},"option2"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/button7.png","width":30,"height":30,"alt":"Backward"},"option3"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/button8.png","width":30,"height":30,"alt":"Left"},"option4"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/button1.png","width":30,"height":30,"alt":"additional1"},"option5"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/button2.png","width":30,"height":30,"alt":"additional2"},"option6"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/button3.png","width":30,"height":30,"alt":"additional3"},"option7"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/button4.png","width":30,"height":30,"alt":"additional4"},"option8"]]), "options_dropdown");
-    this.setOutput(true, null);
-    this.setColour("#400046");
- this.setTooltip("");
- this.setHelpUrl("");
-  }
-};
-
 Blockly.Blocks['remote'] = {
   init: function() {
     this.appendDummyInput();
     this.appendValueInput("button_set_1")
         .setCheck(null);
     this.appendDummyInput()
-        .appendField("                            ");
+        .appendField(".     .");
     this.appendValueInput("button_set_2")
         .setCheck(null);
     this.setInputsInline(true);
-    this.setColour("#74025B");
+    this.setColour(230);
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -317,7 +306,7 @@ Blockly.Blocks['button_vertical_slot'] = {
     this.appendValueInput("button_set_3")
         .setCheck(null);
     this.setOutput(true, null);
-    this.setColour("#74025B");
+    this.setColour(230);
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -327,12 +316,11 @@ Blockly.Blocks['button_horizontal_slot_1'] = {
   init: function() {
     this.appendValueInput("button_set_1")
         .setCheck(null);
-    this.appendDummyInput();
     this.appendValueInput("button_set_2")
         .setCheck(null);
-    this.appendDummyInput();
+    this.setInputsInline(true);
     this.setOutput(true, null);
-    this.setColour("#74025B");
+    this.setColour(230);
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -341,13 +329,347 @@ Blockly.Blocks['button_horizontal_slot_1'] = {
 Blockly.Blocks['button_horizontal_slot_2'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("        ");
+        .appendField(".           .");
     this.appendValueInput("button_set_3")
         .setCheck(null);
     this.appendDummyInput()
-        .appendField("       ");
+        .appendField(".          .");
+    this.setInputsInline(true);
     this.setOutput(true, null);
-    this.setColour("#74025B");
+    this.setColour(225);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['remote_option_1'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button7.png", 30, 30, { alt: "*", flipRtl: "FALSE" }));
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldDropdown([["   Forward","Forward"], ["Backward","Backward"], ["Left           ","Left"], ["Right         ","Right"], ["Left Spin   ","Left Spin"], ["Right Spin ","Right Spin"], ["Buzzer      ","Buzzer"], ["LED          ","LED"]]), "NAME");
+    this.setInputsInline(false);
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['remote_option_2'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button8.png", 30, 30, { alt: "*", flipRtl: "FALSE" }));
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldDropdown([["   Forward","Forward"], ["Backward","Backward"], ["Left           ","Left"], ["Right         ","Right"], ["Left Spin   ","Left Spin"], ["Right Spin ","Right Spin"], ["Buzzer      ","Buzzer"], ["LED          ","LED"]]), "NAME");
+    this.setInputsInline(false);
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['remote_option_3'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button5.png", 30, 30, { alt: "*", flipRtl: "FALSE" }));
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldDropdown([["   Forward","Forward"], ["Backward","Backward"], ["Left           ","Left"], ["Right         ","Right"], ["Left Spin   ","Left Spin"], ["Right Spin ","Right Spin"], ["Buzzer      ","Buzzer"], ["LED          ","LED"]]), "NAME");
+    this.setInputsInline(false);
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['remote_option_4'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button6.png", 30, 30, { alt: "*", flipRtl: "FALSE" }));
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldDropdown([["   Forward","Forward"], ["Backward","Backward"], ["Left           ","Left"], ["Right         ","Right"], ["Left Spin   ","Left Spin"], ["Right Spin ","Right Spin"], ["Buzzer      ","Buzzer"], ["LED          ","LED"]]), "NAME");
+    this.setInputsInline(false);
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['remote_option_5'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button1.png", 30, 30, { alt: "*", flipRtl: "FALSE" }));
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldDropdown([["   Forward","Forward"], ["Backward","Backward"], ["Left           ","Left"], ["Right         ","Right"], ["Left Spin   ","Left Spin"], ["Right Spin ","Right Spin"], ["Buzzer      ","Buzzer"], ["LED          ","LED"]]), "NAME");
+    this.setInputsInline(false);
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['remote_option_6'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button2.png", 30, 30, { alt: "*", flipRtl: "FALSE" }));
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldDropdown([["   Forward","Forward"], ["Backward","Backward"], ["Left           ","Left"], ["Right         ","Right"], ["Left Spin   ","Left Spin"], ["Right Spin ","Right Spin"], ["Buzzer      ","Buzzer"], ["LED          ","LED"]]), "NAME");
+    this.setInputsInline(false);
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['remote_option_7'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button3.png", 30, 30, { alt: "*", flipRtl: "FALSE" }));
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldDropdown([["   Forward","Forward"], ["Backward","Backward"], ["Left           ","Left"], ["Right         ","Right"], ["Left Spin   ","Left Spin"], ["Right Spin ","Right Spin"], ["Buzzer      ","Buzzer"], ["LED          ","LED"]]), "NAME");
+    this.setInputsInline(false);
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['remote_option_8'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button4.png", 30, 30, { alt: "*", flipRtl: "FALSE" }));
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldDropdown([["   Forward","Forward"], ["Backward","Backward"], ["Left           ","Left"], ["Right         ","Right"], ["Left Spin   ","Left Spin"], ["Right Spin ","Right Spin"], ["Buzzer      ","Buzzer"], ["LED          ","LED"]]), "NAME");
+    this.setInputsInline(false);
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['remote'] = {
+  init: function() {
+    this.appendDummyInput();
+    this.appendValueInput("button_set_1")
+        .setCheck(null);
+    this.appendDummyInput()
+        .appendField(".     .");
+    this.appendValueInput("button_set_2")
+        .setCheck(null);
+    this.setInputsInline(true);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['_1'] = {
+  init: function() {
+    this.appendValueInput("set1")
+        .setCheck(null);
+    this.appendValueInput("set2")
+        .setCheck(null);
+    this.appendValueInput("set3")
+        .setCheck(null);
+    this.setInputsInline(false);
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['button_vertical_slot'] = {
+  init: function() {
+    this.appendValueInput("button_set_1")
+        .setCheck(null);
+    this.appendValueInput("button_set_2")
+        .setCheck(null);
+    this.appendValueInput("button_set_3")
+        .setCheck(null);
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['button_horizontal_slot_1'] = {
+  init: function() {
+    this.appendValueInput("button_set_1")
+        .setCheck(null);
+    this.appendValueInput("button_set_2")
+        .setCheck(null);
+    this.setInputsInline(true);
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['button_horizontal_slot_2'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField(".           .");
+    this.appendValueInput("button_set_3")
+        .setCheck(null);
+    this.appendDummyInput()
+        .appendField(".           .");
+    this.setInputsInline(true);
+    this.setOutput(true, null);
+    this.setColour(225);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['remote_option_1'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button7.png", 30, 30, { alt: "*", flipRtl: "FALSE" }));
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldDropdown([["   Forward","Forward"], ["Backward","Backward"], ["Left           ","Left"], ["Right         ","Right"], ["Left Spin   ","Left Spin"], ["Right Spin ","Right Spin"], ["Buzzer      ","Buzzer"], ["LED          ","LED"]]), "NAME");
+    this.setInputsInline(false);
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['remote_option_2'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button8.png", 30, 30, { alt: "*", flipRtl: "FALSE" }));
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldDropdown([["   Forward","Forward"], ["Backward","Backward"], ["Left           ","Left"], ["Right         ","Right"], ["Left Spin   ","Left Spin"], ["Right Spin ","Right Spin"], ["Buzzer      ","Buzzer"], ["LED          ","LED"]]), "NAME");
+    this.setInputsInline(false);
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['remote_option_3'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button5.png", 30, 30, { alt: "*", flipRtl: "FALSE" }));
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldDropdown([["   Forward","Forward"], ["Backward","Backward"], ["Left           ","Left"], ["Right         ","Right"], ["Left Spin   ","Left Spin"], ["Right Spin ","Right Spin"], ["Buzzer      ","Buzzer"], ["LED          ","LED"]]), "NAME");
+    this.setInputsInline(false);
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['remote_option_4'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button6.png", 30, 30, { alt: "*", flipRtl: "FALSE" }));
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldDropdown([["   Forward","Forward"], ["Backward","Backward"], ["Left           ","Left"], ["Right         ","Right"], ["Left Spin   ","Left Spin"], ["Right Spin ","Right Spin"], ["Buzzer      ","Buzzer"], ["LED          ","LED"]]), "NAME");
+    this.setInputsInline(false);
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['remote_option_5'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button1.png", 30, 30, { alt: "*", flipRtl: "FALSE" }));
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldDropdown([["   Forward","Forward"], ["Backward","Backward"], ["Left           ","Left"], ["Right         ","Right"], ["Left Spin   ","Left Spin"], ["Right Spin ","Right Spin"], ["Buzzer      ","Buzzer"], ["LED          ","LED"]]), "NAME");
+    this.setInputsInline(false);
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['remote_option_6'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button2.png", 30, 30, { alt: "*", flipRtl: "FALSE" }));
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldDropdown([["   Forward","Forward"], ["Backward","Backward"], ["Left           ","Left"], ["Right         ","Right"], ["Left Spin   ","Left Spin"], ["Right Spin ","Right Spin"], ["Buzzer      ","Buzzer"], ["LED          ","LED"]]), "NAME");
+    this.setInputsInline(false);
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['remote_option_7'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button3.png", 30, 30, { alt: "*", flipRtl: "FALSE" }));
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldDropdown([["   Forward","Forward"], ["Backward","Backward"], ["Left           ","Left"], ["Right         ","Right"], ["Left Spin   ","Left Spin"], ["Right Spin ","Right Spin"], ["Buzzer      ","Buzzer"], ["LED          ","LED"]]), "NAME");
+    this.setInputsInline(false);
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['remote_option_8'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button4.png", 30, 30, { alt: "*", flipRtl: "FALSE" }));
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldDropdown([["   Forward","Forward"], ["Backward","Backward"], ["Left           ","Left"], ["Right         ","Right"], ["Left Spin   ","Left Spin"], ["Right Spin ","Right Spin"], ["Buzzer      ","Buzzer"], ["LED          ","LED"]]), "NAME");
+    this.setInputsInline(false);
+    this.setOutput(true, null);
+    this.setColour(230);
  this.setTooltip("");
  this.setHelpUrl("");
   }
