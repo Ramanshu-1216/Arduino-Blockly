@@ -188,3 +188,87 @@ Blockly.JavaScript['ir2'] = function(block) {
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
+
+Blockly.JavaScript['remote_option'] = function(block) {
+  var dropdown_options_dropdown = block.getFieldValue('options_dropdown');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['remote'] = function(block) {
+  var value_button_set_1 = Blockly.JavaScript.valueToCode(block, 'button_set_1', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_button_set_2 = Blockly.JavaScript.valueToCode(block, 'button_set_2', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['button_vertical_slot'] = function(block) {
+  var value_button_set_1 = Blockly.JavaScript.valueToCode(block, 'button_set_1', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_button_set_2 = Blockly.JavaScript.valueToCode(block, 'button_set_2', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_button_set_3 = Blockly.JavaScript.valueToCode(block, 'button_set_3', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['button_horizontal_slot_1'] = function(block) {
+  var value_button_set_1 = Blockly.JavaScript.valueToCode(block, 'button_set_1', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_button_set_2 = Blockly.JavaScript.valueToCode(block, 'button_set_2', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['button_horizontal_slot_2'] = function(block) {
+  var value_button_set_3 = Blockly.JavaScript.valueToCode(block, 'button_set_3', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};Blockly.JavaScript['remote_option'] = function(block) {
+  var dropdown_options_dropdown = block.getFieldValue('options_dropdown');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['remote'] = function(block) {
+  var value_button_set_1 = Blockly.JavaScript.valueToCode(block, 'button_set_1', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_button_set_2 = Blockly.JavaScript.valueToCode(block, 'button_set_2', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['button_vertical_slot'] = function(block) {
+  var value_button_set_1 = Blockly.JavaScript.valueToCode(block, 'button_set_1', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_button_set_2 = Blockly.JavaScript.valueToCode(block, 'button_set_2', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_button_set_3 = Blockly.JavaScript.valueToCode(block, 'button_set_3', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['button_horizontal_slot_1'] = function(block) {
+  var value_button_set_1 = Blockly.JavaScript.valueToCode(block, 'button_set_1', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_button_set_2 = Blockly.JavaScript.valueToCode(block, 'button_set_2', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['button_horizontal_slot_2'] = function(block) {
+  var value_button_set_3 = Blockly.JavaScript.valueToCode(block, 'button_set_3', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
