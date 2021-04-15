@@ -298,7 +298,7 @@ Blockly.Blocks['remote'] = {
     this.appendValueInput("button_set_1")
         .setCheck(null);
     this.appendDummyInput()
-        .appendField(".     .");
+        .appendField("       ");
     this.appendValueInput("button_set_2")
         .setCheck(null);
     this.setInputsInline(true);
@@ -341,11 +341,11 @@ Blockly.Blocks['button_horizontal_slot_1'] = {
 Blockly.Blocks['button_horizontal_slot_2'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(".      .");
+        .appendField("        ");
     this.appendValueInput("button_set_3")
         .setCheck(null);
     this.appendDummyInput()
-        .appendField(".     .");
+        .appendField("       ");
     this.setOutput(true, null);
     this.setColour("#74025B");
  this.setTooltip("");
