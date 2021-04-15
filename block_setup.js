@@ -286,7 +286,7 @@ Blockly.Blocks['remote_option'] = {
     this.appendDummyInput()
         .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/button5.png","width":30,"height":30,"alt":"Forward"},"option1"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/button6.png","width":30,"height":30,"alt":"Right"},"option2"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/button7.png","width":30,"height":30,"alt":"Backward"},"option3"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/button8.png","width":30,"height":30,"alt":"Left"},"option4"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/button1.png","width":30,"height":30,"alt":"additional1"},"option5"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/button2.png","width":30,"height":30,"alt":"additional2"},"option6"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/button3.png","width":30,"height":30,"alt":"additional3"},"option7"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/button4.png","width":30,"height":30,"alt":"additional4"},"option8"]]), "options_dropdown");
     this.setOutput(true, null);
-    this.setColour("#7F7F7F");
+    this.setColour("#400046");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -332,7 +332,7 @@ Blockly.Blocks['button_horizontal_slot_1'] = {
         .setCheck(null);
     this.appendDummyInput();
     this.setOutput(true, null);
-    this.setColour("#400046");
+    this.setColour("#74025B");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -347,7 +347,7 @@ Blockly.Blocks['button_horizontal_slot_2'] = {
     this.appendDummyInput()
         .appendField(".     .");
     this.setOutput(true, null);
-    this.setColour("#400046");
+    this.setColour("#74025B");
  this.setTooltip("");
  this.setHelpUrl("");
   }
