@@ -298,7 +298,7 @@ Blockly.Blocks['remote'] = {
     this.appendValueInput("button_set_1")
         .setCheck(null);
     this.appendDummyInput()
-        .appendField("       ");
+        .appendField("                            ");
     this.appendValueInput("button_set_2")
         .setCheck(null);
     this.setInputsInline(true);
