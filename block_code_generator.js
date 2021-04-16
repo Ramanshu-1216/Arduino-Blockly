@@ -207,15 +207,15 @@ Blockly.JavaScript['_1'] = function(block) {
   return [code, Blockly.JavaScript.ORDER_COMMA];
 };
 
-//Blockly.JavaScript['button_vertical_slot'] = function(block) {
-//  var value_button_set_1 = Blockly.JavaScript.valueToCode(block, 'button_set_1', Blockly.JavaScript.ORDER_ATOMIC);
-//  var value_button_set_2 = Blockly.JavaScript.valueToCode(block, 'button_set_2', Blockly.JavaScript.ORDER_ATOMIC);
-//  var value_button_set_3 = Blockly.JavaScript.valueToCode(block, 'button_set_3', Blockly.JavaScript.ORDER_ATOMIC);
-//  // TODO: Assemble JavaScript into code variable.
-//  var code = '...';
-//  // TODO: Change ORDER_NONE to the correct strength.
-//  return [code, Blockly.JavaScript.ORDER_NONE];
-//};
+Blockly.JavaScript['button_vertical_slot'] = function(block) {
+  var value_button_set_1 = Blockly.JavaScript.valueToCode(block, 'button_set_1', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_button_set_2 = Blockly.JavaScript.valueToCode(block, 'button_set_2', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_button_set_3 = Blockly.JavaScript.valueToCode(block, 'button_set_3', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = value_button_set_1 + value_button_set_2 + value_button_set_3;
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
 
 Blockly.JavaScript['button_horizontal_slot_1'] = function(block) {
   var value_button_set_1 = Blockly.JavaScript.valueToCode(block, 'button_set_1', Blockly.JavaScript.ORDER_NONE);
