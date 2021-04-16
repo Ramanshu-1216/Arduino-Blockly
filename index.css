@@ -146,3 +146,15 @@ li:hover{
 #content{
     white-space: pre-wrap;
 }
+
+.blocklyDropDownContent img{
+/*    height: 20;*/
+    /* position: absolute; */
+    width: 700px;
+/*
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+*/
+}
