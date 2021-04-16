@@ -291,7 +291,7 @@ Blockly.Blocks['remote'] = {
     this.appendValueInput("button_set_2")
         .setCheck(null);
     this.setInputsInline(true);
-    this.setColour(230);
+    this.setColour("#753a88");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -307,7 +307,7 @@ Blockly.Blocks['_1'] = {
         .setCheck(null);
     this.setInputsInline(false);
     this.setOutput(true, null);
-    this.setColour(230);
+    this.setColour("#753a88");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -321,7 +321,7 @@ Blockly.Blocks['button_horizontal_slot_1'] = {
         .setCheck(null);
     this.setInputsInline(true);
     this.setOutput(true, null);
-    this.setColour(230);
+    this.setColour("#753a88");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -337,7 +337,7 @@ Blockly.Blocks['button_horizontal_slot_2'] = {
         .appendField("            ");
     this.setInputsInline(true);
     this.setOutput(true, null);
-    this.setColour(225);
+    this.setColour("#753a88");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -353,7 +353,7 @@ Blockly.Blocks['remote_option_1'] = {
         .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
-    this.setColour(230);
+    this.setColour("#cdcdcd");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -369,7 +369,7 @@ Blockly.Blocks['remote_option_2'] = {
         .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
-    this.setColour(230);
+    this.setColour("#cdcdcd");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -385,7 +385,7 @@ Blockly.Blocks['remote_option_3'] = {
         .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
-    this.setColour(230);
+    this.setColour("#cdcdcd");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -401,7 +401,7 @@ Blockly.Blocks['remote_option_4'] = {
         .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
-    this.setColour(230);
+    this.setColour("#cdcdcd");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -417,7 +417,7 @@ Blockly.Blocks['remote_option_5'] = {
         .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
-    this.setColour(230);
+    this.setColour("#cdcdcd");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -433,7 +433,7 @@ Blockly.Blocks['remote_option_6'] = {
         .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
-    this.setColour(230);
+    this.setColour("#cdcdcd");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -449,7 +449,7 @@ Blockly.Blocks['remote_option_7'] = {
         .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
-    this.setColour(230);
+    this.setColour("#cdcdcd");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -465,7 +465,7 @@ Blockly.Blocks['remote_option_8'] = {
         .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
-    this.setColour(230);
+    this.setColour("#cdcdcd");
  this.setTooltip("");
  this.setHelpUrl("");
   }
