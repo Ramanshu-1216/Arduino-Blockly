@@ -470,3 +470,19 @@ Blockly.Blocks['remote_option_8'] = {
  this.setHelpUrl("");
   }
 };
+
+Blockly.Blocks['move_line_follower'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("move")
+        .appendField(new Blockly.FieldDropdown([["Left","left"], ["Right","right"], ["Forward","forward"], ["Backward","backward"], ["Turn Around","deg360"], ["Stop","stop"]]), "move_dropdown")
+        .appendField("at");
+    this.appendValueInput("speed")
+        .setCheck(null);
+    this.setInputsInline(true);
+    this.setPreviousStatement(true, null);
+    this.setColour(105);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};

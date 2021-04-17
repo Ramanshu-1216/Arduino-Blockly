@@ -297,3 +297,30 @@ Blockly.JavaScript['remote_option_8'] = function(block) {
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_COMMA];
 };
+
+Blockly.JavaScript['move_line_follower'] = function(block) {
+  var dropdown_move_dropdown = block.getFieldValue('move_dropdown');
+  var value_speed = Blockly.JavaScript.valueToCode(block, 'speed', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = "";
+    if(dropdown_move_dropdown == "left"){
+        code = "\tleft"+ value_speed + ";\n";
+    }
+    if(dropdown_move_dropdown == "right"){
+        code = "\tright"+ value_speed + ";\n";
+    }
+    if(dropdown_move_dropdown == "forward"){
+        code = "\tforward"+ value_speed + ";\n";
+    }
+    if(dropdown_move_dropdown == "backward"){
+        code = "t\backward"+ value_speed + ";\n";
+    }
+    if(dropdown_move_dropdown == "deg360"){
+        code = "\tdeg360"+ value_speed + ";\n";
+    }
+    if(dropdown_move_dropdown == "stop"){
+        code = "t\stop"+ value_speed + ";\n";
+    }
+  return code;
+  return code;
+};
