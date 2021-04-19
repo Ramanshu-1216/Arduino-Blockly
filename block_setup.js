@@ -259,7 +259,7 @@ Blockly.Blocks['ir1'] = {
         .setCheck(null);
     this.setInputsInline(true);
     this.setOutput(true, null);
-    this.setColour("#4040bf");
+    this.setColour("cc0099");
  this.setTooltip("");
  this.setHelpUrl("");
   }
