@@ -611,3 +611,76 @@ Blockly.Blocks['move_line_follower'] = {
  this.setHelpUrl("");
   }
 };
+
+Blockly.Blocks['start'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Start                                            ");
+    this.appendStatementInput("NAME")
+        .setCheck(null);
+    this.appendDummyInput()
+        .appendField("End");
+    this.setColour(345);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['move_hard_code'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Move")
+        .appendField(new Blockly.FieldDropdown([["Left","left"], ["Right","right"], ["Forward","forward"], ["Backward","backward"], ["Spin Left","spin_left"], ["Spin Rigth","spin_right"]]), "move_dropdown")
+        .appendField("for")
+        .appendField(new Blockly.FieldNumber(10, 0), "delay")
+        .appendField("seconds");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(105);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['led'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Turn on")
+        .appendField(new Blockly.FieldDropdown([["LED","led"], ["Buzzer","buzzer"]]), "led_buzzer")
+        .appendField("for")
+        .appendField(new Blockly.FieldNumber(2, 0), "delay")
+        .appendField("seconds");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['voice'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Speak")
+        .appendField(new Blockly.FieldTextInput("*Enter Command*"), "NAME")
+        .appendField("to")
+        .appendField(new Blockly.FieldDropdown([["Move Left","left"], ["Move Right","right"], ["Move Forward","forward"], ["Move Backward","backward"], ["Turn Around","deg360"], ["Stop","stop"], ["Turn on LED","led"], ["Blow the buzzer","buzzer"]]), "move_dropdown");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['set_command'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Declare Voice Commands      ");
+    this.appendStatementInput("NAME")
+        .setCheck(null);
+    this.setColour(345);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};

@@ -672,6 +672,7 @@
     <block type="logic_null"></block>
     <block type="logic_negate"></block>
   </category>
+            <sep></sep>
   <category name="Remote" colour="#a55b80">
     <block type="remote">
       <value name="button_set_1">
@@ -774,6 +775,124 @@
     </block>
     <block type="remote_option_7">
       <field name="options_dropdown">buzzer()</field>
+    </block>
+  </category>
+            <category name="Voice Control" colour="#9fa55b">
+    <block type="set_command">
+      <statement name="NAME">
+        <block type="voice">
+          <field name="NAME">*Enter Command*</field>
+          <field name="move_dropdown">left</field>
+          <next>
+            <block type="voice">
+              <field name="NAME">*Enter Command*</field>
+              <field name="move_dropdown">right</field>
+              <next>
+                <block type="voice">
+                  <field name="NAME">*Enter Command*</field>
+                  <field name="move_dropdown">forward</field>
+                  <next>
+                    <block type="voice">
+                      <field name="NAME">*Enter Command*</field>
+                      <field name="move_dropdown">backward</field>
+                      <next>
+                        <block type="voice">
+                          <field name="NAME">*Enter Command*</field>
+                          <field name="move_dropdown">deg360</field>
+                          <next>
+                            <block type="voice">
+                              <field name="NAME">*Enter Command*</field>
+                              <field name="move_dropdown">stop</field>
+                              <next>
+                                <block type="voice">
+                                  <field name="NAME">*Enter Command*</field>
+                                  <field name="move_dropdown">led</field>
+                                  <next>
+                                    <block type="voice">
+                                      <field name="NAME">*Enter Command*</field>
+                                      <field name="move_dropdown">buzzer</field>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="set_command"></block>
+    <block type="voice">
+      <field name="NAME">*Enter Command*</field>
+      <field name="move_dropdown">left</field>
+    </block>
+  </category>
+  <category name="Arena" colour="#a5745b">
+    <block type="start">
+      <statement name="NAME">
+        <block type="move_hard_code">
+          <field name="move_dropdown">left</field>
+          <field name="delay">10</field>
+          <next>
+            <block type="move_hard_code">
+              <field name="move_dropdown">right</field>
+              <field name="delay">10</field>
+              <next>
+                <block type="move_hard_code">
+                  <field name="move_dropdown">forward</field>
+                  <field name="delay">10</field>
+                  <next>
+                    <block type="move_hard_code">
+                      <field name="move_dropdown">backward</field>
+                      <field name="delay">10</field>
+                      <next>
+                        <block type="move_hard_code">
+                          <field name="move_dropdown">spin_left</field>
+                          <field name="delay">10</field>
+                          <next>
+                            <block type="move_hard_code">
+                              <field name="move_dropdown">spin_right</field>
+                              <field name="delay">10</field>
+                              <next>
+                                <block type="led">
+                                  <field name="led_buzzer">led</field>
+                                  <field name="delay">2</field>
+                                  <next>
+                                    <block type="led">
+                                      <field name="led_buzzer">buzzer</field>
+                                      <field name="delay">2</field>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block type="start"></block>
+    <block type="move_hard_code">
+      <field name="move_dropdown">left</field>
+      <field name="delay">10</field>
+    </block>
+    <block type="led">
+      <field name="led_buzzer">led</field>
+      <field name="delay">2</field>
     </block>
   </category>
 </xml>

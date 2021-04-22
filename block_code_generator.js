@@ -324,3 +324,41 @@ Blockly.JavaScript['move_line_follower'] = function(block) {
   return code;
   return code;
 };
+
+Blockly.JavaScript['start'] = function(block) {
+  var statements_name = Blockly.JavaScript.statementToCode(block, 'NAME');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['move_hard_code'] = function(block) {
+  var dropdown_move_dropdown = block.getFieldValue('move_dropdown');
+  var number_delay = block.getFieldValue('delay');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['led'] = function(block) {
+  var dropdown_led_buzzer = block.getFieldValue('led_buzzer');
+  var number_delay = block.getFieldValue('delay');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['voice'] = function(block) {
+  var text_name = block.getFieldValue('NAME');
+  var dropdown_move_dropdown = block.getFieldValue('move_dropdown');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['set_command'] = function(block) {
+  var statements_name = Blockly.JavaScript.statementToCode(block, 'NAME');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
