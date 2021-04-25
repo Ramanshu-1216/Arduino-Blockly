@@ -362,3 +362,19 @@ Blockly.JavaScript['set_command'] = function(block) {
   var code = '...;\n';
   return code;
 };
+
+Blockly.JavaScript['_150'] = function(block) {
+  var number_name = block.getFieldValue('NAME');
+  // TODO: Assemble JavaScript into code variable.
+  var code = number_name;
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['_0'] = function(block) {
+  var number_name = block.getFieldValue('NAME');
+  // TODO: Assemble JavaScript into code variable.
+  var code = number_name;
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};

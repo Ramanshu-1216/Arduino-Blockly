@@ -70,7 +70,7 @@ Blockly.Blocks['move'] = {
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(105);
+    this.setColour("#BEC215");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -83,7 +83,7 @@ Blockly.Blocks['delay'] = {
         .appendField(new Blockly.FieldTextInput("0"), "delay");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(230);
+    this.setColour("fcc300");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -100,7 +100,7 @@ Blockly.Blocks['arduino'] = {
     this.appendStatementInput("loop")
         .setCheck(null);
     this.setInputsInline(true);
-    this.setColour(230);
+    this.setColour("#22e4ac");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -135,7 +135,7 @@ Blockly.Blocks['distance'] = {
     this.appendDummyInput()
         .appendField("front distance");
     this.setOutput(true, null);
-    this.setColour(30);
+    this.setColour("#fea120");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -153,7 +153,7 @@ Blockly.Blocks['en'] = {
         .appendField("left motor = ");
     this.setInputsInline(false);
     this.setOutput(true, null);
-    this.setColour(165);
+    this.setColour("EC2049");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -166,7 +166,7 @@ Blockly.Blocks['comment'] = {
         .appendField(new Blockly.FieldTextInput("Add Comment"), "comment");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(230);
+    this.setColour("#14c9cd");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -179,7 +179,7 @@ Blockly.Blocks['print'] = {
         .appendField(new Blockly.FieldTextInput("Print"), "print");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(230);
+    this.setColour("#14c9cd");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -191,7 +191,7 @@ Blockly.Blocks['s1'] = {
         .appendField("S1 = ")
         .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
     this.setOutput(true, null);
-    this.setColour(300);
+    this.setColour("12a4d9");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -203,7 +203,7 @@ Blockly.Blocks['s2'] = {
         .appendField("S2 = ")
         .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
     this.setOutput(true, null);
-    this.setColour(300);
+    this.setColour("12a4d9");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -215,7 +215,7 @@ Blockly.Blocks['s3'] = {
         .appendField("S3 = ")
         .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
     this.setOutput(true, null);
-    this.setColour(300);
+    this.setColour("12a4d9");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -227,7 +227,7 @@ Blockly.Blocks['s4'] = {
         .appendField("S4 = ")
         .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
     this.setOutput(true, null);
-    this.setColour(300);
+    this.setColour("12a4d9");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -239,7 +239,7 @@ Blockly.Blocks['s5'] = {
         .appendField("S5 = ")
         .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
     this.setOutput(true, null);
-    this.setColour(300);
+    this.setColour("12a4d9");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -259,7 +259,7 @@ Blockly.Blocks['ir1'] = {
         .setCheck(null);
     this.setInputsInline(true);
     this.setOutput(true, null);
-    this.setColour("#cc0099");
+    this.setColour("fea120");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -275,7 +275,7 @@ Blockly.Blocks['ir2'] = {
         .setCheck(null);
     this.setInputsInline(true);
     this.setOutput(true, null);
-    this.setColour(230);
+    this.setColour("#FCC300");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -292,19 +292,10 @@ Blockly.Blocks['remote'] = {
     this.appendValueInput("button_set_2")
         .setCheck(null);
     this.setInputsInline(true);
-    this.setColour("#753a88", "#fff");
+    this.setColour("#900c3f");
  this.setTooltip("");
  this.setHelpUrl("");
-  },
-    onchange : function() {
-		/* Adding a vertical gradient to the example block */
-        this.gradient.setVerticalGradient(
-            this, { 
-                "start" : "#CB2B5E",
-                "stop" : this.getColour() 
-            }, ["linear"]
-        );
-	}
+  }
 };
 
 Blockly.Blocks['_1'] = {
@@ -318,19 +309,11 @@ Blockly.Blocks['_1'] = {
         .setCheck(null);
     this.setInputsInline(false);
     this.setOutput(true, null);
-    this.setColour("#753a88");
+    this.setColour("C70039");
  this.setTooltip("");
  this.setHelpUrl("");
-  },
-    onchange : function() {
-		/* Adding a vertical gradient to the example block */
-        this.gradient.setVerticalGradient(
-            this, { 
-                "start" : "#CB2B5E",
-                "stop" : this.getColour() 
-            }, ["blub"]
-        );
-	}
+  }
+   
 };
 
 Blockly.Blocks['button_horizontal_slot_1'] = {
@@ -342,19 +325,11 @@ Blockly.Blocks['button_horizontal_slot_1'] = {
         .setCheck(null);
     this.setInputsInline(true);
     this.setOutput(true, null);
-    this.setColour("#753a88");
+    this.setColour("#ff5733");
  this.setTooltip("");
  this.setHelpUrl("");
-  },
-    onchange : function() {
-		/* Adding a vertical gradient to the example block */
-        this.gradient.setVerticalGradient(
-            this, { 
-                "start" : "#CB2B5E",
-                "stop" : this.getColour() 
-            }, ["blub"]
-        );
-	}
+  }
+   
 };
 
 Blockly.Blocks['button_horizontal_slot_2'] = {
@@ -368,19 +343,10 @@ Blockly.Blocks['button_horizontal_slot_2'] = {
         .appendField("            ");
     this.setInputsInline(true);
     this.setOutput(true, null);
-    this.setColour("#753a88");
+    this.setColour("#ff5733");
  this.setTooltip("");
  this.setHelpUrl("");
-  },
-    onchange : function() {
-		/* Adding a vertical gradient to the example block */
-        this.gradient.setVerticalGradient(
-            this, { 
-                "start" : "#CB2B5E",
-                "stop" : this.getColour() 
-            }, ["blub"]
-        );
-	}
+  }
 };
 
 Blockly.Blocks['remote_option_1'] = {
@@ -393,7 +359,7 @@ Blockly.Blocks['remote_option_1'] = {
         .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
-    this.setColour("#cdcdcd");
+    this.setColour("#FCC300");
       this.gradient = new ColourGradient();
  this.setTooltip("");
  this.setHelpUrl("");
@@ -420,7 +386,7 @@ Blockly.Blocks['remote_option_2'] = {
         .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
-    this.setColour("#cdcdcd");
+    this.setColour("#FCC300");
       this.gradient = new ColourGradient();
  this.setTooltip("");
  this.setHelpUrl("");
@@ -448,7 +414,7 @@ Blockly.Blocks['remote_option_3'] = {
     this.setInputsInline(false);
     this.setOutput(true, null);
       this.gradient = new ColourGradient();
-    this.setColour("#cdcdcd");
+    this.setColour("#FCC300");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -475,7 +441,7 @@ Blockly.Blocks['remote_option_4'] = {
     this.setInputsInline(false);
       this.gradient = new ColourGradient();
     this.setOutput(true, null);
-    this.setColour("#cdcdcd");
+    this.setColour("#FCC300");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -502,7 +468,7 @@ Blockly.Blocks['remote_option_5'] = {
     this.setInputsInline(false);
     this.setOutput(true, null);
       this.gradient = new ColourGradient();
-    this.setColour("#cdcdcd");
+    this.setColour("#FCC300");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -528,7 +494,7 @@ Blockly.Blocks['remote_option_6'] = {
         .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
-    this.setColour("#cdcdcd");
+    this.setColour("#FCC300");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -544,7 +510,7 @@ Blockly.Blocks['remote_option_7'] = {
         .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
-    this.setColour("#cdcdcd");
+    this.setColour("#FCC300");
  this.setTooltip("");
  this.setHelpUrl("");
   },
@@ -579,7 +545,7 @@ Blockly.Blocks['remote_option_8'] = {
         .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
-    this.setColour("#cdcdcd");
+    this.setColour("#FCC300");
       this.gradient = new ColourGradient();
  this.setTooltip("");
  this.setHelpUrl("");
@@ -606,7 +572,7 @@ Blockly.Blocks['move_line_follower'] = {
         .setCheck(null);
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
-    this.setColour(105);
+    this.setColour("6b0772");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -620,7 +586,7 @@ Blockly.Blocks['start'] = {
         .setCheck(null);
     this.appendDummyInput()
         .appendField("End");
-    this.setColour(345);
+    this.setColour("264653");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -636,7 +602,7 @@ Blockly.Blocks['move_hard_code'] = {
         .appendField("seconds");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(105);
+    this.setColour("2a9d8f");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -652,7 +618,7 @@ Blockly.Blocks['led'] = {
         .appendField("seconds");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(230);
+    this.setColour("E47297");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -667,7 +633,7 @@ Blockly.Blocks['voice'] = {
         .appendField(new Blockly.FieldDropdown([["Move Left","left"], ["Move Right","right"], ["Move Forward","forward"], ["Move Backward","backward"], ["Turn Around","deg360"], ["Stop","stop"], ["Turn on LED","led"], ["Blow the buzzer","buzzer"]]), "move_dropdown");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(230);
+    this.setColour("#FCC300");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -679,7 +645,29 @@ Blockly.Blocks['set_command'] = {
         .appendField("Declare Voice Commands      ");
     this.appendStatementInput("NAME")
         .setCheck(null);
-    this.setColour(345);
+    this.setColour("AA0114");
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['_150'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField(new Blockly.FieldNumber(150), "NAME");
+    this.setOutput(true, null);
+    this.setColour("#e65c9c");
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['_0'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField(new Blockly.FieldNumber(0), "NAME");
+    this.setOutput(true, null);
+    this.setColour("#fcc300");
  this.setTooltip("");
  this.setHelpUrl("");
   }
