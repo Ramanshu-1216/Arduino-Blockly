@@ -112,7 +112,7 @@ Blockly.Blocks['line'] = {
         .appendField("Line Follower");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(345);
+    this.setColour("#a7226e");
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -124,7 +124,7 @@ Blockly.Blocks['wall'] = {
         .appendField("Wall Follower");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(345);
+    this.setColour("#a7226e");
  this.setTooltip("");
  this.setHelpUrl("");
   }
