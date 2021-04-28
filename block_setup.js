@@ -189,7 +189,7 @@ Blockly.Blocks['s1'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("S1 = ")
-        .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
+        .appendField(new Blockly.FieldDropdown([["0","LOW"], ["1","HIGH"]]), "Value_LS4");
     this.setOutput(true, null);
     this.setColour("12a4d9");
  this.setTooltip("");
@@ -201,7 +201,7 @@ Blockly.Blocks['s2'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("S2 = ")
-        .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
+        .appendField(new Blockly.FieldDropdown([["0","LOW"], ["1","HIGH"]]), "Value_LS4");
     this.setOutput(true, null);
     this.setColour("12a4d9");
  this.setTooltip("");
@@ -213,7 +213,7 @@ Blockly.Blocks['s3'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("S3 = ")
-        .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
+        .appendField(new Blockly.FieldDropdown([["0","LOW"], ["1","HIGH"]]), "Value_LS4");
     this.setOutput(true, null);
     this.setColour("12a4d9");
  this.setTooltip("");
@@ -225,7 +225,7 @@ Blockly.Blocks['s4'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("S4 = ")
-        .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
+        .appendField(new Blockly.FieldDropdown([["0","LOW"], ["1","HIGH"]]), "Value_LS4");
     this.setOutput(true, null);
     this.setColour("12a4d9");
  this.setTooltip("");
@@ -237,7 +237,7 @@ Blockly.Blocks['s5'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("S5 = ")
-        .appendField(new Blockly.FieldDropdown([["0","low"], ["1","high"]]), "Value_LS4");
+        .appendField(new Blockly.FieldDropdown([["0","LOW"], ["1","HIGH"]]), "Value_LS4");
     this.setOutput(true, null);
     this.setColour("12a4d9");
  this.setTooltip("");

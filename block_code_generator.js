@@ -34,14 +34,14 @@ Blockly.JavaScript['move'] = function(block) {
     if(dropdown_move_dropdown == "forward"){
         code = "\tforward"+ value_speed + ";\n";
     }
-    if(dropdown_move_dropdown == "backward"){
-        code = "t\backward"+ value_speed + ";\n";
+    if(dropdown_move_dropdown == "reverse"){
+        code = "t\reverse"+ value_speed + ";\n";
     }
     if(dropdown_move_dropdown == "deg360"){
         code = "\tdeg360"+ value_speed + ";\n";
     }
     if(dropdown_move_dropdown == "stop"){
-        code = "t\stop"+ value_speed + ";\n";
+        code = "\tstop_all"+ value_speed + ";\n";
     }
   return code;
 };
@@ -63,7 +63,7 @@ Blockly.JavaScript['arduino'] = function(block) {
 
 Blockly.JavaScript['line'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
-  var code = "\n\t//Line Follower\n\t// IR SENSOR ARRAY \n\tpinMode (LS1, INPUT);\n\tpinMode (LS2, INPUT);\n\tpinMode (LS3, INPUT);\n\tpinMode (LS4, INPUT);\n\tpinMode (RS1, INPUT);\n\tpinMode (RS2, INPUT);\n\tpinMode (RS3, INPUT);\n\tpinMode (RS4, INPUT);\n\t\n\t// MOTOR AND ENABLES\n\tpinMode (RM1, OUTPUT);\n\tpinMode (RM2, OUTPUT);\n\tpinMode (LM1, OUTPUT);\n\tpinMode (LM2, OUTPUT);\n\tpinMode (EN1, OUTPUT);\n\tpinMode (EN2, OUTPUT);\n\n\t";
+  var code = "\n\t//Line Follower\n\t// MOTOR AND ENABLES\n\tpinMode (RM1, OUTPUT);\n\tpinMode (RM2, OUTPUT);\n\tpinMode (LM1, OUTPUT);\n\tpinMode (LM2, OUTPUT);\n\tpinMode (EN1, OUTPUT);\n\tpinMode (EN2, OUTPUT);\n\t// IR ARRAY\n\tpinMode (IR1, INPUT);\n\tpinMode (IR2, INPUT);\n\tpinMode (IR3, INPUT);\n\tpinMode (IR4, INPUT);\n\tpinMode (IR5, INPUT);\n";
   return code;
 };
 
@@ -75,7 +75,7 @@ Blockly.JavaScript['wall'] = function(block) {
 
 Blockly.JavaScript['distance'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
-  var code = "dist()";
+  var code = "distance()";
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
@@ -106,7 +106,7 @@ Blockly.JavaScript['print'] = function(block) {
 Blockly.JavaScript['s1'] = function(block) {
   var dropdown_value_ls4 = block.getFieldValue('Value_LS4');
   // TODO: Assemble JavaScript into code variable.
-  var code = "digitalRead(S1) =="  + dropdown_value_ls4;
+  var code = "digitalRead(IR1) == "  + dropdown_value_ls4;
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
@@ -114,7 +114,7 @@ Blockly.JavaScript['s1'] = function(block) {
 Blockly.JavaScript['s2'] = function(block) {
   var dropdown_value_ls4 = block.getFieldValue('Value_LS4');
   // TODO: Assemble JavaScript into code variable.
-  var code = "digitalRead(S2) =="  + dropdown_value_ls4;
+  var code = "digitalRead(IR2) == "  + dropdown_value_ls4;
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
@@ -122,7 +122,7 @@ Blockly.JavaScript['s2'] = function(block) {
 Blockly.JavaScript['s3'] = function(block) {
   var dropdown_value_ls4 = block.getFieldValue('Value_LS4');
   // TODO: Assemble JavaScript into code variable.
-  var code = "digitalRead(S3) =="  + dropdown_value_ls4;
+  var code = "digitalRead(IR3) == "  + dropdown_value_ls4;
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
@@ -130,7 +130,7 @@ Blockly.JavaScript['s3'] = function(block) {
 Blockly.JavaScript['s4'] = function(block) {
   var dropdown_value_ls4 = block.getFieldValue('Value_LS4');
   // TODO: Assemble JavaScript into code variable.
-  var code = "digitalRead(S4) =="  + dropdown_value_ls4;
+  var code = "digitalRead(IR4) == "  + dropdown_value_ls4;
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
@@ -138,7 +138,7 @@ Blockly.JavaScript['s4'] = function(block) {
 Blockly.JavaScript['s5'] = function(block) {
   var dropdown_value_ls4 = block.getFieldValue('Value_LS4');
   // TODO: Assemble JavaScript into code variable.
-  var code = "digitalRead(S5) =="  + dropdown_value_ls4;
+  var code = "digitalRead(IR5) == "  + dropdown_value_ls4;
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
@@ -312,14 +312,14 @@ Blockly.JavaScript['move_line_follower'] = function(block) {
     if(dropdown_move_dropdown == "forward"){
         code = "\tforward"+ value_speed + ";\n";
     }
-    if(dropdown_move_dropdown == "backward"){
-        code = "t\backward"+ value_speed + ";\n";
+    if(dropdown_move_dropdown == "reverse"){
+        code = "t\reverse"+ value_speed + ";\n";
     }
     if(dropdown_move_dropdown == "deg360"){
         code = "\tdeg360"+ value_speed + ";\n";
     }
     if(dropdown_move_dropdown == "stop"){
-        code = "t\stop"+ value_speed + ";\n";
+        code = "\tstop_all"+ value_speed + ";\n";
     }
   return code;
   return code;
@@ -328,7 +328,7 @@ Blockly.JavaScript['move_line_follower'] = function(block) {
 Blockly.JavaScript['start'] = function(block) {
   var statements_name = Blockly.JavaScript.statementToCode(block, 'NAME');
   // TODO: Assemble JavaScript into code variable.
-  var code = '...;\n';
+  var code = "\nvoid loop()\n{\n\t//Arena Code" + statements_name + "\n}";
   return code;
 };
 
@@ -336,7 +336,10 @@ Blockly.JavaScript['move_hard_code'] = function(block) {
   var dropdown_move_dropdown = block.getFieldValue('move_dropdown');
   var number_delay = block.getFieldValue('delay');
   // TODO: Assemble JavaScript into code variable.
-  var code = '...;\n';
+    if(dropdown_move_dropdown == "stop"){
+        dropdown_move_dropdown = "stop_all";
+    }
+  var code = "\n\t" + dropdown_move_dropdown + "();\n\tdelay(" + number_delay + ");";
   return code;
 };
 
@@ -344,7 +347,7 @@ Blockly.JavaScript['led'] = function(block) {
   var dropdown_led_buzzer = block.getFieldValue('led_buzzer');
   var number_delay = block.getFieldValue('delay');
   // TODO: Assemble JavaScript into code variable.
-  var code = '...;\n';
+  var code = "\n\t" + dropdown_led_buzzer + "();\n\tdelay(" + number_delay + ");";
   return code;
 };
 
@@ -352,14 +355,17 @@ Blockly.JavaScript['voice'] = function(block) {
   var text_name = block.getFieldValue('NAME');
   var dropdown_move_dropdown = block.getFieldValue('move_dropdown');
   // TODO: Assemble JavaScript into code variable.
-  var code = '...;\n';
+    if(dropdown_move_dropdown == "stop"){
+        dropdown_move_dropdown = "stop_all";
+    }
+  var code = '\n\tif(message == "' + text_name + '")\n\t{\n\t\t' + dropdown_move_dropdown + '();' + '\n\t}\n';
   return code;
 };
 
 Blockly.JavaScript['set_command'] = function(block) {
   var statements_name = Blockly.JavaScript.statementToCode(block, 'NAME');
   // TODO: Assemble JavaScript into code variable.
-  var code = '...;\n';
+  var code = "\nvoid loop()\n{\n\t//Voice Control Code\n" + "\n\tString message;\n\tif(Serial.available() > 0)\n\t{\n\t\t// Checks whether data is comming from the serial port\n\t\tmessage = Serial.read();   // Reads the data from the serial port\n\t}\n" + statements_name + "}";
   return code;
 };
 
