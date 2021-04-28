@@ -284,7 +284,6 @@ Blockly.Blocks['ir2'] = {
 Blockly.Blocks['remote'] = {
   init: function() {
     this.appendDummyInput();
-      this.gradient = new ColourGradient();
     this.appendValueInput("button_set_1")
         .setCheck(null);
     this.appendDummyInput()
@@ -302,7 +301,6 @@ Blockly.Blocks['_1'] = {
   init: function() {
     this.appendValueInput("set1")
         .setCheck(null);
-      this.gradient = new ColourGradient();
     this.appendValueInput("set2")
         .setCheck(null);
     this.appendValueInput("set3")
@@ -320,7 +318,6 @@ Blockly.Blocks['button_horizontal_slot_1'] = {
   init: function() {
     this.appendValueInput("button_set_1")
         .setCheck(null);
-      this.gradient = new ColourGradient();
     this.appendValueInput("button_set_2")
         .setCheck(null);
     this.setInputsInline(true);
@@ -338,7 +335,7 @@ Blockly.Blocks['button_horizontal_slot_2'] = {
         .appendField("             ");
     this.appendValueInput("button_set_3")
         .setCheck(null);
-      this.gradient = new ColourGradient();
+      
     this.appendDummyInput()
         .appendField("            ");
     this.setInputsInline(true);
@@ -360,7 +357,7 @@ Blockly.Blocks['remote_option_1'] = {
     this.setInputsInline(false);
     this.setOutput(true, null);
     this.setColour("#FCC300");
-      this.gradient = new ColourGradient();
+      
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -387,7 +384,7 @@ Blockly.Blocks['remote_option_2'] = {
     this.setInputsInline(false);
     this.setOutput(true, null);
     this.setColour("#FCC300");
-      this.gradient = new ColourGradient();
+      
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -413,7 +410,7 @@ Blockly.Blocks['remote_option_3'] = {
         .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
-      this.gradient = new ColourGradient();
+      
     this.setColour("#FCC300");
  this.setTooltip("");
  this.setHelpUrl("");
@@ -439,7 +436,7 @@ Blockly.Blocks['remote_option_4'] = {
         .setAlign(Blockly.ALIGN_CENTRE)
         .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
-      this.gradient = new ColourGradient();
+      
     this.setOutput(true, null);
     this.setColour("#FCC300");
  this.setTooltip("");
@@ -467,7 +464,7 @@ Blockly.Blocks['remote_option_5'] = {
         .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
-      this.gradient = new ColourGradient();
+      
     this.setColour("#FCC300");
  this.setTooltip("");
  this.setHelpUrl("");
@@ -513,16 +510,17 @@ Blockly.Blocks['remote_option_7'] = {
     this.setColour("#FCC300");
  this.setTooltip("");
  this.setHelpUrl("");
-  },
-    onchange : function() {
-		/* Adding a vertical gradient to the example block */
-        this.gradient.setVerticalGradient(
-            this, { 
-                "start" : "#CB2B5E",
-                "stop" : this.getColour() 
-            }, ["blub"]
-        );
-	}
+  }
+//  },
+//    onchange : function() {
+//		/* Adding a vertical gradient to the example block */
+//        this.gradient.setVerticalGradient(
+//            this, { 
+//                "start" : "#CB2B5E",
+//                "stop" : this.getColour() 
+//            }, ["blub"]
+//        );
+//	}
 //    ,
 //    onchange : function() {
 //		/* Adding a vertical gradient to the example block */
@@ -546,7 +544,7 @@ Blockly.Blocks['remote_option_8'] = {
     this.setInputsInline(false);
     this.setOutput(true, null);
     this.setColour("#FCC300");
-      this.gradient = new ColourGradient();
+      
  this.setTooltip("");
  this.setHelpUrl("");
   }
