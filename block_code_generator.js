@@ -1,3 +1,6 @@
+var value_left = -1;
+var value_right = -1;
+
 Blockly.JavaScript['ir_array'] = function(block) {
   var dropdown_value_ls4 = block.getFieldValue('Value_LS4');
   var dropdown_logic_ls4 = block.getFieldValue('Logic_LS4');
@@ -49,7 +52,7 @@ Blockly.JavaScript['move'] = function(block) {
 Blockly.JavaScript['delay'] = function(block) {
   var text_delay = block.getFieldValue('delay');
   // TODO: Assemble JavaScript into code variable.
-  var code = "\tdelay(" + text_delay + ");\n";
+  var code = "\tdelay(" + parseInt(text_delay) * 1000 + ");           // Delay in MilliSeconds\n";
   return code;
 };
 
@@ -84,6 +87,12 @@ Blockly.JavaScript['en'] = function(block) {
   var value_right_moto_speed = Blockly.JavaScript.valueToCode(block, 'right_moto_speed', Blockly.JavaScript.ORDER_ATOMIC);
   var value_left_motor_speed = Blockly.JavaScript.valueToCode(block, 'left_motor_speed', Blockly.JavaScript.ORDER_ATOMIC);
   // TODO: Assemble JavaScript into code variable.
+    if(value_left != -1){
+        value_left_motor_speed = value_left;
+    }
+    if(value_left != -1){
+        value_right_moto_speed = value_right;
+    }
   var code = value_left_motor_speed + ", " + value_right_moto_speed;
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
@@ -371,6 +380,7 @@ Blockly.JavaScript['set_command'] = function(block) {
 
 Blockly.JavaScript['_150'] = function(block) {
   var number_name = block.getFieldValue('NAME');
+//    block.setFieldValue('NAME');
   // TODO: Assemble JavaScript into code variable.
   var code = number_name;
   // TODO: Change ORDER_NONE to the correct strength.
@@ -383,4 +393,13 @@ Blockly.JavaScript['_0'] = function(block) {
   var code = number_name;
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['global_speed'] = function(block) {
+  value_left = Blockly.JavaScript.valueToCode(block, 'left', Blockly.JavaScript.ORDER_ATOMIC);
+  value_right = Blockly.JavaScript.valueToCode(block, 'right', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = "" + value_left + " " + value_right;
+    console.log(code);
+  return code;
 };

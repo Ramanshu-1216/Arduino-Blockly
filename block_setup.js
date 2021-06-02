@@ -80,7 +80,8 @@ Blockly.Blocks['delay'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("delay")
-        .appendField(new Blockly.FieldTextInput("0"), "delay");
+        .appendField(new Blockly.FieldTextInput("0"), "delay")
+        .appendField("seconds");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour("fcc300");
@@ -92,14 +93,15 @@ Blockly.Blocks['delay'] = {
 Blockly.Blocks['arduino'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("void setup                                   .");
+        .appendField("void setup                           ");
     this.appendStatementInput("setup")
         .setCheck(null);
     this.appendDummyInput()
-        .appendField("void loop                                    .");
+        .appendField("void loop                            ");
     this.appendStatementInput("loop")
         .setCheck(null);
     this.setInputsInline(true);
+      this.setPreviousStatement(true, null);
     this.setColour("#22e4ac");
  this.setTooltip("");
  this.setHelpUrl("");
@@ -666,6 +668,22 @@ Blockly.Blocks['_0'] = {
         .appendField(new Blockly.FieldNumber(0), "NAME");
     this.setOutput(true, null);
     this.setColour("#fcc300");
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+Blockly.Blocks['global_speed'] = {
+  init: function() {
+    this.appendValueInput("left")
+        .setCheck("Number")
+        .appendField("Left Motor Speed");
+    this.appendValueInput("right")
+        .setCheck("Number")
+        .appendField("Right Motor Speed");
+    this.setInputsInline(false);
+    this.setNextStatement(true, null);
+    this.setColour("#22e4ac");
  this.setTooltip("");
  this.setHelpUrl("");
   }
