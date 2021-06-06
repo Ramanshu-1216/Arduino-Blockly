@@ -399,7 +399,7 @@ Blockly.JavaScript['global_speed'] = function(block) {
   value_left = Blockly.JavaScript.valueToCode(block, 'left', Blockly.JavaScript.ORDER_ATOMIC);
   value_right = Blockly.JavaScript.valueToCode(block, 'right', Blockly.JavaScript.ORDER_ATOMIC);
   // TODO: Assemble JavaScript into code variable.
-  var code = "" + value_left + " " + value_right;
+  var code = "\n//Global Variables\n#define speedEN1 " + value_left + "\n#define speedEN2 " + value_right + "\n";
     console.log(code);
   return code;
 };

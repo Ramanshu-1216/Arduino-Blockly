@@ -293,6 +293,7 @@ Blockly.Blocks['remote'] = {
     this.appendValueInput("button_set_2")
         .setCheck(null);
     this.setInputsInline(true);
+    this.setPreviousStatement(true, null);
     this.setColour("#900c3f");
  this.setTooltip("");
  this.setHelpUrl("");
@@ -352,10 +353,10 @@ Blockly.Blocks['remote_option_1'] = {
   init: function() {
     this.appendDummyInput()
         .setAlign(Blockly.ALIGN_CENTRE)
-        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button7.png", 40, 40, { alt: "*", flipRtl: "FALSE" }));
+        .appendField(new Blockly.FieldImage("https://ramanshu-1216.github.io/Arduino-Blockly/button7.png", 40, 40, { alt: "*", flipRtl: "FALSE" }));
     this.appendDummyInput()
         .setAlign(Blockly.ALIGN_CENTRE)
-        .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
+        .appendField(new Blockly.FieldDropdown([[{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
     this.setColour("#FCC300");
@@ -379,10 +380,10 @@ Blockly.Blocks['remote_option_2'] = {
   init: function() {
     this.appendDummyInput()
         .setAlign(Blockly.ALIGN_CENTRE)
-        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button8.png", 40, 40, { alt: "*", flipRtl: "FALSE" }));
+        .appendField(new Blockly.FieldImage("https://ramanshu-1216.github.io/Arduino-Blockly/button8.png", 40, 40, { alt: "*", flipRtl: "FALSE" }));
     this.appendDummyInput()
         .setAlign(Blockly.ALIGN_CENTRE)
-        .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
+        .appendField(new Blockly.FieldDropdown([[{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
     this.setColour("#FCC300");
@@ -406,10 +407,10 @@ Blockly.Blocks['remote_option_3'] = {
   init: function() {
     this.appendDummyInput()
         .setAlign(Blockly.ALIGN_CENTRE)
-        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button5.png", 40, 40, { alt: "*", flipRtl: "FALSE" }));
+        .appendField(new Blockly.FieldImage("https://ramanshu-1216.github.io/Arduino-Blockly/button5.png", 40, 40, { alt: "*", flipRtl: "FALSE" }));
     this.appendDummyInput()
         .setAlign(Blockly.ALIGN_CENTRE)
-        .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
+        .appendField(new Blockly.FieldDropdown([[{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
       
@@ -433,10 +434,10 @@ Blockly.Blocks['remote_option_4'] = {
   init: function() {
     this.appendDummyInput()
         .setAlign(Blockly.ALIGN_CENTRE)
-        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button6.png", 40, 40, { alt: "*", flipRtl: "FALSE" }));
+        .appendField(new Blockly.FieldImage("https://ramanshu-1216.github.io/Arduino-Blockly/button6.png", 40, 40, { alt: "*", flipRtl: "FALSE" }));
     this.appendDummyInput()
         .setAlign(Blockly.ALIGN_CENTRE)
-        .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
+        .appendField(new Blockly.FieldDropdown([[{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
       
     this.setOutput(true, null);
@@ -460,10 +461,10 @@ Blockly.Blocks['remote_option_5'] = {
   init: function() {
     this.appendDummyInput()
         .setAlign(Blockly.ALIGN_CENTRE)
-        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button1.png", 40, 40, { alt: "*", flipRtl: "FALSE" }));
+        .appendField(new Blockly.FieldImage("https://ramanshu-1216.github.io/Arduino-Blockly/button1.png", 40, 40, { alt: "*", flipRtl: "FALSE" }));
     this.appendDummyInput()
         .setAlign(Blockly.ALIGN_CENTRE)
-        .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
+        .appendField(new Blockly.FieldDropdown([[{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
       
@@ -487,10 +488,10 @@ Blockly.Blocks['remote_option_6'] = {
   init: function() {
     this.appendDummyInput()
         .setAlign(Blockly.ALIGN_CENTRE)
-        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button2.png", 40, 40, { alt: "*", flipRtl: "FALSE" }));
+        .appendField(new Blockly.FieldImage("https://ramanshu-1216.github.io/Arduino-Blockly/button2.png", 40, 40, { alt: "*", flipRtl: "FALSE" }));
     this.appendDummyInput()
         .setAlign(Blockly.ALIGN_CENTRE)
-        .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
+        .appendField(new Blockly.FieldDropdown([[{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
     this.setColour("#FCC300");
@@ -503,10 +504,10 @@ Blockly.Blocks['remote_option_7'] = {
   init: function() {
     this.appendDummyInput()
         .setAlign(Blockly.ALIGN_CENTRE)
-        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button3.png", 40, 40, { alt: "*", flipRtl: "FALSE" }));
+        .appendField(new Blockly.FieldImage("https://ramanshu-1216.github.io/Arduino-Blockly/button3.png", 40, 40, { alt: "*", flipRtl: "FALSE" }));
     this.appendDummyInput()
         .setAlign(Blockly.ALIGN_CENTRE)
-        .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
+        .appendField(new Blockly.FieldDropdown([[{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
     this.setColour("#FCC300");
@@ -539,10 +540,10 @@ Blockly.Blocks['remote_option_8'] = {
   init: function() {
     this.appendDummyInput()
         .setAlign(Blockly.ALIGN_CENTRE)
-        .appendField(new Blockly.FieldImage("https://gawande1216.github.io/Arduino-Blockly/button4.png", 40, 40, { alt: "*", flipRtl: "FALSE" }));
+        .appendField(new Blockly.FieldImage("https://ramanshu-1216.github.io/Arduino-Blockly/button4.png", 40, 40, { alt: "*", flipRtl: "FALSE" }));
     this.appendDummyInput()
         .setAlign(Blockly.ALIGN_CENTRE)
-        .appendField(new Blockly.FieldDropdown([[{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://gawande1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
+        .appendField(new Blockly.FieldDropdown([[{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%201.png","width":70,"height":20,"alt":"Forward"},"forward()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%202.png","width":70,"height":20,"alt":"Backward"},"backward()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%203.png","width":70,"height":20,"alt":"Left"},"left()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%204.png","width":70,"height":20,"alt":"Right"},"right()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%205.png","width":70,"height":20,"alt":"Spin Left"},"spin_left()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%206.png","width":70,"height":20,"alt":"Spin Right"},"spin_right()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%207.png","width":70,"height":20,"alt":"LED"},"led()"], [{"src":"https://ramanshu-1216.github.io/Arduino-Blockly/Group%208.png","width":70,"height":20,"alt":"Buzzer"},"buzzer()"]]), "options_dropdown");
     this.setInputsInline(false);
     this.setOutput(true, null);
     this.setColour("#FCC300");
@@ -586,6 +587,7 @@ Blockly.Blocks['start'] = {
         .setCheck(null);
     this.appendDummyInput()
         .appendField("End");
+    this.setPreviousStatement(true, null);
     this.setColour("264653");
  this.setTooltip("");
  this.setHelpUrl("");
@@ -645,6 +647,7 @@ Blockly.Blocks['set_command'] = {
         .appendField("Declare Voice Commands      ");
     this.appendStatementInput("NAME")
         .setCheck(null);
+    this.setPreviousStatement(true, null);
     this.setColour("AA0114");
  this.setTooltip("");
  this.setHelpUrl("");
